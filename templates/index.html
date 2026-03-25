@@ -10,7 +10,9 @@
 <body>
 
     <header class="top-bar">
-        <div class="logo">QUARTU <span>PARFUME</span></div>
+        <div class="logo">
+            <img src="{{ url_for('static', filename='IMG_3791.jpeg') }}" alt="Quartu Parfume Logo" style="max-height: 80px; width: auto;">
+        </div>
     </header>
 
     <main class="container">
@@ -29,7 +31,7 @@
         <section class="product-card">
             <div class="product-image-container">
                 <span class="badge badge-new"><span class="dot new"></span> NOVITÀ</span>
-                <div class="placeholder-image">Foto Profumo 1</div> 
+                <img src="{{ url_for('static', filename='IMG_5278.jpeg') }}" alt="Foto Profumo 1" style="width: 100%; max-width: 300px; display: block; margin: 0 auto;"> 
             </div>
             
             <p class="product-number">NO. 01 — REMAKE</p>
@@ -44,6 +46,10 @@
         </section>
 
         <section class="product-card">
+            <div class="product-image-container">
+                <img src="{{ url_for('static', filename='IMG_5277.jpeg') }}" alt="Foto Profumo Originale" style="width: 100%; max-width: 300px; display: block; margin: 0 auto;">
+            </div>
+
             <p class="product-number">NO. 01 — ORIGINALE</p>
             <h2 class="product-title">Quartu 1</h2>
             <p class="product-desc">L'originale — disponibile fino ad esaurimento scorte</p>
@@ -62,7 +68,7 @@
         <section class="product-card">
             <div class="product-image-container">
                 <span class="badge badge-stable"><span class="dot stable"></span> PREZZO STABILE</span>
-                <div class="placeholder-image">Foto Profumo 2</div>
+                <img src="{{ url_for('static', filename='IMG_3791.jpeg') }}" alt="Foto Profumo 2" style="width: 100%; max-width: 300px; display: block; margin: 0 auto;">
             </div>
             
             <p class="product-number">NO. 02</p>
