@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quartu Parfume</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="top-bar">
+        <div class="logo">QUARTU <span>PARFUME</span></div>
+    </header>
+
+    <main class="container">
+        
+        <section class="section-header">
+            <p class="subtitle">LA COLLEZIONE</p>
+            <h1 class="title">I Nostri <em>Profumi</em></h1>
+            
+            <div class="legend">
+                <p>LEGENDA: <span class="dot new"></span> Novità</p>
+                <p><span class="dot stable"></span> Prezzo stabile &nbsp;&nbsp; <span class="dot discount"></span> Prezzo scontato</p>
+                <p><span class="dot sale"></span> Svendita — fino ad esaurimento scorte</p>
+            </div>
+        </section>
+
+        <section class="product-card">
+            <div class="product-image-container">
+                <span class="badge badge-new"><span class="dot new"></span> NOVITÀ</span>
+                <div class="placeholder-image">Foto Profumo 1</div> 
+            </div>
+            
+            <p class="product-number">NO. 01 — REMAKE</p>
+            <h2 class="product-title">Quartu 1</h2>
+            <p class="product-desc">La fragranza originale, reinventata con nuove note</p>
+
+            <ul class="price-list">
+                <li><span class="ml-box">100 ml</span> <span class="promo">+ 3x2ml omaggio</span> <span class="price">34,99 €</span></li>
+                <li><span class="ml-box">50 ml</span> <span class="promo">+ 2x2ml omaggio</span> <span class="price">24,99 €</span></li>
+                <li><span class="ml-box">30 ml</span> <span class="promo">+ 2ml omaggio</span> <span class="price">19,99 €</span></li>
+            </ul>
+        </section>
+
+        <section class="product-card">
+            <p class="product-number">NO. 01 — ORIGINALE</p>
+            <h2 class="product-title">Quartu 1</h2>
+            <p class="product-desc">L'originale — disponibile fino ad esaurimento scorte</p>
+
+            <ul class="price-list">
+                <li><span class="ml-box">100 ml</span> <span class="promo"></span> <span class="price out-of-stock">Esaurito</span></li>
+                <li><span class="ml-box">50 ml</span> <span class="promo"></span> <span class="price">3,99 €</span></li>
+                <li><span class="ml-box">30 ml</span> <span class="promo"></span> <span class="price">2,99 €</span></li>
+                <li><span class="ml-box">10 ml</span> <span class="promo"></span> <span class="price">0,99 €</span></li>
+            </ul>
+            <div class="alert-box">
+                ⚠️ PREZZI SCONTATI — FINO AD ESAURIMENTO SCORTE
+            </div>
+        </section>
+
+        <section class="product-card">
+            <div class="product-image-container">
+                <span class="badge badge-stable"><span class="dot stable"></span> PREZZO STABILE</span>
+                <div class="placeholder-image">Foto Profumo 2</div>
+            </div>
+            
+            <p class="product-number">NO. 02</p>
+            <h2 class="product-title">Quartu 2</h2>
+            <p class="product-desc">Eleganza senza tempo, purezza assoluta</p>
+
+            <ul class="price-list">
+                <li><span class="ml-box">100 ml</span> <span class="price">29,99 €</span></li>
+                <li><span class="ml-box">50 ml</span> <span class="price">19,99 €</span></li>
+                <li><span class="ml-box">30 ml</span> <span class="price">14,99 €</span></li>
+                <li><span class="ml-box">10 ml</span> <span class="price">7,49 €</span></li>
+            </ul>
+        </section>
+
+        <section class="brand-story">
+            <p class="product-number">IL MARCHIO</p>
+            <h2 class="title">L'Arte della <em>Fragranza</em></h2>
+            <p class="story-text">
+                <span class="gold-text">Quartu Parfume</span> nasce dalla passione per le essenze rare e la profumeria artigianale. Ogni bottiglia racchiude un viaggio olfattivo studiato nei minimi dettagli, dove la <span class="gold-text">qualità delle materie prime</span> si fonde con una visione estetica moderna.
+            </p>
+            <p class="story-text">
+                Le nostre fragranze sono pensate per chi non vuole <span class="gold-text">compromessi tra stile e accessibilità</span> — un lusso autentico, alla portata di tutti.
+            </p>
+        </section>
+
+        <section class="contact-section">
+            <h2 class="title text-center">Siamo qui<br>per <em>te</em></h2>
+            <p class="subtitle text-center">INFORMAZIONI, ORDINI E OPPORTUNITÀ DI PARTNERSHIP</p>
+
+            <div class="contact-card">
+                <p class="icon">📞</p>
+                <h3>Chiamaci</h3>
+                <p class="contact-detail gold-text">+39 379 261 6803</p>
+                <p class="contact-sub">Lun - Sab · 9:00 - 20:00</p>
+            </div>
+
+            <div class="contact-card">
+                <p class="icon">💬</p>
+                <h3>WhatsApp</h3>
+                <p class="contact-detail gold-text">+39 379 261 6803</p>
+                <p class="contact-sub">Risposta rapida garantita</p>
+            </div>
+
+            <div class="contact-card partnership">
+                <p class="subtitle text-center">OPPORTUNITÀ DI COLLABORAZIONE</p>
+                <p class="story-text text-center">
+                    Vuoi diventare sponsor o partner di <em>Quartu Parfume</em>?<br>
+                    Contattaci al <span class="gold-text underline">+39 379 261 6803</span> — costruiamo qualcosa di grande insieme.
+                </p>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
